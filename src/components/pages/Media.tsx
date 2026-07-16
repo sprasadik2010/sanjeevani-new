@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { mediaImages } from '../../data';
 
 const Media = () => {
