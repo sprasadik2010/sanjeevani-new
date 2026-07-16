@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fcf9f5;
+  }
+}
+
+@layer components {
+  .gold-text {
+    color: #b8863d;
+  }
+  
+  .btn-gold {
+    background: #b8863d;
+    color: white;
+    padding: 0.6rem 1.8rem;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: all 0.2s;
+    box-shadow: 0 6px 14px rgba(184, 134, 61, 0.3);
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-gold:hover {
+    background: #a06f2e;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(184, 134, 61, 0.4);
+  }
+
+  .btn-outline-gold {
+    border: 2px solid #b8863d;
+    color: #b8863d;
+    background: transparent;
+    padding: 0.5rem 1.8rem;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: all 0.2s;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .btn-outline-gold:hover {
+    background: #b8863d;
+    color: white;
+  }
+
+  .nav-link {
+    position: relative;
+    font-weight: 500;
+    color: #2d2a24;
+    transition: color 0.2s;
+    text-decoration: none;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #b8863d;
+    transition: width 0.3s;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .nav-link:hover {
+    color: #b8863d;
+  }
+
+  .hover-scale {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.02);
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  @media (max-width: 640px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  }
+
+  .media-grid img {
+    object-fit: cover;
+    height: 220px;
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  }
+  
+  .media-grid img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 16px 32px rgba(184, 134, 61, 0.2);
+  }
+
+  .banner-shadow {
+    box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.3);
+  }
+}
