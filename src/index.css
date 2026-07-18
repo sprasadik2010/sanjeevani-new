@@ -2,8 +2,8 @@
 
 @layer base {
   body {
-    font-family: 'Inter', sans-serif;
-    background-color: #fcf9f5;
+    font-family: 'Aptos Serif', 'Aptos Slab SemiBold';
+    background-color: palegreen;
   }
 }
 
