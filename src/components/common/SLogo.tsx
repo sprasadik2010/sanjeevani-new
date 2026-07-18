@@ -3,7 +3,7 @@ import logoimg from '../../assets/sanjeevanilogo.svg';
 
 const Logo: React.FC = () => {
     return (
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 font-sans">
             <div className="flex-shrink-0 animate-pulse">
                 <img
                     src={logoimg}
@@ -11,14 +11,14 @@ const Logo: React.FC = () => {
                     className="w-10 h-auto"
                 />
             </div>
-            <div className="flex flex-col w-auto">
-                <div className="text-sm text-green font-semibold text-center underline">
-                    Vaidyar M. Vishnu Patteri's
+            <div className="flex flex-col w-auto select-none">
+                <div className="text-[19px] font-medium font-serif text-[#13783B] tracking-wide border-b-2 border-[#13783B] pb-0.5 text-center leading-none">
+                    Vaidyar M.Vishnu Patteri's
                 </div>
-                <div className="text-xl font-bold font-bauhaus text-red-500 -mt-2">
+                <div className="text-[38px] font-bold font-bauhaus text-[#FF2A00] leading-none tracking-normal uppercase text-center mt-1">
                     SANJEEVANI GROUP
                 </div>
-                <div className="text-xs text-center -mt-2">
+                <div className="text-[20px] font-serif text-black text-center mt-1 leading-none">
                     ESTD 1979
                 </div>
             </div>
