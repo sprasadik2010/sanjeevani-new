@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Bauhaus 93';
+  src: local('Bauhaus 93'), url('/fonts/BAUHS93.TTF') format('truetype');
+}
+
 @theme {
   --font-sans: 'Poppins', sans-serif;
   --font-serif: Georgia, 'Times New Roman', serif;
