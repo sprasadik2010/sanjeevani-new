@@ -2,6 +2,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
+import StickyActions from './components/common/StickyActions';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import OurService from './components/pages/OurService';
@@ -23,6 +24,7 @@ function App() {
         <Route path="/book-now" element={<BookNow />} />
         <Route path="/consult-now" element={<ConsultNow />} />
       </Routes>
+      <StickyActions />
       <Footer />
     </BrowserRouter>
   );

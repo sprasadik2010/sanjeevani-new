@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <footer className="bg-amber-900/5 text-center py-8 text-gray-600 border-t border-amber-200/30">
+    <footer className="bg-amber-900/5 text-center pt-8 pb-24 lg:pb-8 text-gray-600 border-t border-amber-200/30">
       <p className="font-serif-display text-lg gold-text">Sanjeevani Ayurveda</p>
       <p className="text-sm">© 2026 • Holistic healing for life</p>
       <div className="flex justify-center gap-6 mt-3 text-amber-700">

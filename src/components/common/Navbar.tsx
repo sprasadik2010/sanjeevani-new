@@ -33,15 +33,50 @@ const Navbar = () => {
 
   return (
     <>
-      <nav 
-        className={`
-          fixed top-0 left-0 right-0 z-50 transition-all duration-500
-          ${isScrolled 
-            ? 'bg-white/95 backdrop-blur-xl shadow-lg py-2' 
-            : 'bg-white/80 backdrop-blur-md shadow-sm py-4'
-          }
-        `}
-      >
+      <header className="fixed top-0 left-0 right-0 z-50 flex flex-col w-full">
+        {/* Social Media Top Bar */}
+        <div 
+          className={`
+            bg-[#5c5656] text-white flex items-center justify-center gap-6 text-sm transition-all duration-300 ease-in-out
+            ${isScrolled ? 'h-0 opacity-0 overflow-hidden' : 'h-9'}
+          `}
+        >
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-amber-300 transition-colors py-1">
+            <i className="fab fa-facebook-f text-base"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-amber-300 transition-colors py-1">
+            <i className="fab fa-instagram text-base"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-amber-300 transition-colors py-1">
+            <i className="fab fa-twitter text-base"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-amber-300 transition-colors py-1">
+            <i className="fab fa-linkedin-in text-base"></i>
+          </a>
+        </div>
+
+        {/* Green CALL NOW Bar */}
+        <a 
+          href="tel:+919876543210" 
+          className={`
+            bg-[#13783B] text-white flex items-center justify-center gap-2 font-bold text-sm tracking-wider uppercase transition-all duration-300 ease-in-out hover:bg-[#0f5c2d]
+            ${isScrolled ? 'h-0 opacity-0 overflow-hidden' : 'h-10'}
+          `}
+        >
+          <i className="fas fa-phone text-xs"></i>
+          <span>CALL NOW</span>
+        </a>
+
+        {/* Main Navbar */}
+        <nav 
+          className={`
+            w-full transition-all duration-300 bg-white
+            ${isScrolled 
+              ? 'shadow-md py-2' 
+              : 'shadow-sm py-4'
+            }
+          `}
+        >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <Link 
@@ -199,10 +234,16 @@ const Navbar = () => {
             })}
           </div>
         </div>
-      </nav>
+        </nav>
+      </header>
 
-      {/* Spacer to prevent content from hiding behind navbar */}
-      <div className="h-[72px]"></div>
+      {/* Spacer to prevent content from hiding behind header */}
+      <div 
+        className={`
+          transition-all duration-300 ease-in-out
+          ${isScrolled ? 'h-[76px]' : 'h-[152px]'}
+        `}
+      ></div>
     </>
   );
 };
