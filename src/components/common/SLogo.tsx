@@ -8,17 +8,17 @@ const Logo: React.FC = () => {
                 <img
                     src={logoimg}
                     alt="Logo"
-                    className="w-10 h-auto"
+                    className="w-12 h-auto"
                 />
             </div>
             <div className="flex flex-col w-auto select-none">
-                <div className="text-[19px] font-medium font-serif text-[#13783B] tracking-wide border-b-2 border-[#13783B] pb-0.5 text-center leading-none">
+                <div className="text-[11px] font-medium font-serif text-[#13783B] tracking-[0.25em] pl-[0.25em] border-b border-[#13783B] pb-[2px] text-center leading-none">
                     Vaidyar M.Vishnu Patteri's
                 </div>
-                <div className="text-[38px] font-bold font-bauhaus text-[#FF2A00] leading-none tracking-normal uppercase text-center mt-1">
+                <div className="text-[22px] font-bold font-bauhaus text-[#FF2A00] leading-none tracking-normal uppercase text-center mt-0.5">
                     SANJEEVANI GROUP
                 </div>
-                <div className="text-[20px] font-serif text-black text-center mt-1 leading-none">
+                <div className="text-[12px] font-serif text-black text-center mt-0.5 leading-none">
                     ESTD 1979
                 </div>
             </div>

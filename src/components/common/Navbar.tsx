@@ -89,7 +89,7 @@ const Navbar = () => {
                       key={item.path}
                       to={item.path}
                       className={`
-                        relative px-5 py-2.5 rounded-full font-semibold text-lg transition-all duration-300
+                        relative px-5 py-2.5 rounded-full font-semibold text-lg transition-all duration-300 uppercase
                         ${isActive
                           ? 'bg-gradient-to-r from-amber-500 to-amber-600 text-white shadow-lg shadow-amber-500/30'
                           : 'text-amber-600 hover:text-white hover:bg-gradient-to-r hover:from-amber-500 hover:to-amber-600 hover:shadow-lg hover:shadow-amber-500/30'
@@ -109,7 +109,7 @@ const Navbar = () => {
                     key={item.path}
                     to={item.path}
                     className={`
-                      relative px-4 py-2 rounded-lg font-medium text-lg transition-all duration-300
+                      relative px-4 py-2 rounded-lg font-medium text-lg transition-all duration-300 uppercase
                       ${isActive
                         ? 'text-amber-600'
                         : 'text-gray-700 hover:text-amber-600'
@@ -169,7 +169,7 @@ const Navbar = () => {
                     key={item.path}
                     to={item.path}
                     className={`
-                      block px-5 py-3 rounded-xl font-semibold text-center transition-all duration-300
+                      block px-5 py-3 rounded-xl font-semibold text-center transition-all duration-300 uppercase
                       ${isActive
                         ? 'bg-gradient-to-r from-amber-500 to-amber-600 text-white shadow-lg shadow-amber-500/30'
                         : 'text-amber-600 hover:text-white hover:bg-gradient-to-r hover:from-amber-500 hover:to-amber-600'
@@ -186,7 +186,7 @@ const Navbar = () => {
                   key={item.path}
                   to={item.path}
                   className={`
-                    block px-4 py-3 rounded-lg font-medium transition-all duration-300
+                    block px-4 py-3 rounded-lg font-medium transition-all duration-300 uppercase
                     ${isActive
                       ? 'text-amber-600 bg-amber-50'
                       : 'text-gray-700 hover:text-amber-600 hover:bg-amber-50'
