@@ -61,10 +61,10 @@ const Home = () => {
   }, [nextSlide, prevSlide]);
 
   return (
-    <div className="px-6 md:px-16 py-8">
+    <div className="w-full">
       {/* HERO SLIDER */}
       <div 
-        className="relative rounded-4xl overflow-hidden banner-shadow"
+        className="relative overflow-hidden"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -156,8 +156,10 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Services Preview */}
-      <div className="mt-20">
+      {/* Main Content Area */}
+      <div className="px-6 md:px-16 py-12 max-w-7xl mx-auto">
+        {/* Services Preview */}
+        <div className="mt-8">
         <div className="text-center mb-12">
           <span className="text-sm font-semibold tracking-widest text-amber-600 uppercase">Our Services</span>
           <h2 className="font-serif-display text-4xl md:text-5xl font-bold gold-text mt-2">
@@ -229,6 +231,7 @@ const Home = () => {
           <div className="text-4xl md:text-5xl font-bold gold-text">100%</div>
           <p className="text-gray-600 mt-1">Natural & Pure</p>
         </div>
+      </div>
       </div>
     </div>
   );
