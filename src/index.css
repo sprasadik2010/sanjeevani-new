@@ -155,6 +155,37 @@
   animation: slideIn 0.4s ease-out;
 }
 
+/* Homepage Slider Animations from live site */
+@keyframes zoomIn {
+  0% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 1;
+  }
+}
+
+@keyframes textUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-zoomIn {
+  animation: zoomIn 100s linear forwards;
+}
+
+.animate-textUp {
+  animation: textUp 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
 /* Smooth transition for lightbox */
 .transition-duration-400 {
   transition-duration: 400ms;

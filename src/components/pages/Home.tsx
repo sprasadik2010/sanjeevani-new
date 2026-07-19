@@ -73,27 +73,29 @@ const Home = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className={`absolute inset-0 transition-all duration-700 ease-in-out transform ${
+              className={`absolute inset-0 transition-all duration-1000 ease-in-out transform ${
                 index === currentSlide 
-                  ? 'opacity-100 scale-100 translate-x-0' 
-                  : index < currentSlide 
-                    ? 'opacity-0 -translate-x-full scale-95' 
-                    : 'opacity-0 translate-x-full scale-95'
+                  ? 'translate-x-0 opacity-100 z-10' 
+                  : 'translate-x-full opacity-0 z-0'
               }`}
             >
               {/* Background Image with Overlay */}
-              <div className="absolute inset-0">
+              <div className="absolute inset-0 overflow-hidden">
                 <img 
                   src={slide.image} 
                   alt={slide.title}
-                  className="w-full h-full object-cover"
+                  className={`w-full h-full object-cover ${
+                    index === currentSlide ? 'animate-zoomIn' : ''
+                  }`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
               </div>
 
               {/* Content */}
               <div className="relative h-full flex items-center px-6 md:px-16 lg:px-24">
-                <div className="max-w-2xl space-y-4 md:space-y-6 animate-slideIn">
+                <div className={`max-w-2xl space-y-4 md:space-y-6 ${
+                  index === currentSlide ? 'animate-textUp' : 'opacity-0'
+                }`}>
                   <span className="inline-block px-4 py-1.5 bg-amber-600/80 text-white text-xs md:text-sm font-semibold tracking-widest uppercase rounded-full backdrop-blur-sm">
                     {slide.tag}
                   </span>
