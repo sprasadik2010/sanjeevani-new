@@ -3,12 +3,13 @@
 @theme {
   --font-sans: 'Poppins', sans-serif;
   --font-serif: Georgia, 'Times New Roman', serif;
-  --font-bauhaus: 'Bauhaus 93', sans-serif;
+  --font-bauhaus: 'Bauhaus 93', 'Baumans', sans-serif;
+  --font-serif-display: 'Playfair Display', Georgia, serif;
 }
 
 @layer base {
   body {
-    font-family: 'Aptos Serif', 'Aptos Slab SemiBold';
+    font-family: 'Aptos Serif', 'Aptos Slab SemiBold', Georgia, serif;
     background-color: palegreen;
   }
 }
